@@ -850,226 +850,6 @@ mark {
     display: block
 }
 
-/*-------------------------------------------------------
-    [ Preloader ]
--------------------------------------------------------*/
-
-.loading {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #000;
-    z-index: 9999999999999;
-}
-
-.loading .middle {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-}
-
-.lds-ellipsis {
-    display: inline-block;
-    position: relative;
-    width: 64px;
-    height: 64px;
-}
-
-.lds-ellipsis div {
-    position: absolute;
-    top: 27px;
-    width: 11px;
-    height: 11px;
-    border-radius: 50%;
-    background: #fff;
-    animation-timing-function: cubic-bezier(0, 1, 1, 0);
-}
-
-.lds-ellipsis div:nth-child(1) {
-    left: 6px;
-    animation: lds-ellipsis1 0.6s infinite;
-}
-
-.lds-ellipsis div:nth-child(2) {
-    left: 6px;
-    animation: lds-ellipsis2 0.6s infinite;
-}
-
-.lds-ellipsis div:nth-child(3) {
-    left: 26px;
-    animation: lds-ellipsis2 0.6s infinite;
-}
-
-.lds-ellipsis div:nth-child(4) {
-    left: 45px;
-    animation: lds-ellipsis3 0.6s infinite;
-}
-
-@keyframes lds-ellipsis1 {
-    0% {
-        transform: scale(0);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-@keyframes lds-ellipsis3 {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(0);
-    }
-}
-
-@keyframes lds-ellipsis2 {
-    0% {
-        transform: translate(0, 0);
-    }
-    100% {
-        transform: translate(19px, 0);
-    }
-}
-
-/*----------------------------------------*/
-
-/*  2. Header CSS
-/*----------------------------------------*/
-
-/*----------------------------------------*/
-
-/*  2.1 Header Top
-/*----------------------------------------*/
-
-.header-top {
-    background: #203a72 none repeat scroll 0 0;
-    color: #ffffff;
-    font-size: 13px;
-    position: relative;
-}
-
-.header-top span {
-    padding: 20px 0;
-    display: inline-block;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-}
-
-.header-top-right>.content {
-    display: inline-block;
-    margin-left: 13px;
-    padding-left: 17px;
-    position: relative;
-}
-
-.header-top-right>.content>a {
-    color: #fff
-}
-
-.header-top-right .content:hover>a {
-    color: #2d3e50;
-}
-
-.header-top-right>.content i {
-    font-size: 14px;
-    margin-right: 8px;
-}
-
-.header-top-right {
-    float: right;
-}
-
-.header-top-right span:first-child {
-    margin-right: 25px;
-}
-
-.header-top-right>.content:after {
-    background: #ffffff none repeat scroll 0 0;
-    content: "";
-    height: 10px;
-    left: 0;
-    position: absolute;
-    top: 6px;
-    width: 2px;
-}
-
-.header-top-right>.content:first-child:after {
-    display: none;
-}
-
-.header-top-right>.content .account-dropdown {
-    background-color: #ffffff;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    margin: 0;
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
-    padding: 5px 19px 6px;
-    position: absolute;
-    right: 0;
-    text-align: left;
-    top: 100%;
-    -webkit-transform: scaleY(0);
-    transform: scaleY(0);
-    -webkit-transform-origin: 0 0 0;
-    transform-origin: 0 0 0;
-    -webkit-transition: all 0.6s ease 0s;
-    transition: all 0.6s ease 0s;
-    width: 125px;
-    z-index: -99;
-}
-
-.header-top-right>.content:hover .account-dropdown {
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
-    z-index: 9999;
-}
-
-.account-dropdown a {
-    color: #2d3e50;
-    display: block;
-    padding: 5px 0;
-}
-
-.account-dropdown li {
-    display: block;
-}
-
-/*----------------------------------------*/
-
-/*  2.2 Header Logo Menu
-/*----------------------------------------*/
-
-.header-logo-menu.stick {
-    background: #ffffff none repeat scroll 0 0;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
-    margin: auto;
-    padding: 0;
-    position: fixed;
-    top: 0;
-    -webkit-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-    width: 100%;
-    z-index: 999;
-}
-
-.bg-dark.header-logo-menu.stick {
-    background: #3F5771
-}
-
-.as-mainwrapper.wrapper-boxed .header-logo-menu.stick {
-    width: 1200px
-}
-
-/*----------------------------------------*/
-
 /*  2.2.1 Header Logo
 /*----------------------------------------*/
 
@@ -1721,6 +1501,12 @@ mark {
     font-weight: 700;
 }
 
+.scrolling-news{
+    padding: 5px;
+    background-color: rgb(4, 88, 145);
+    color: whi;
+}
+
 .hero-slider-content>p {
     font-size: 16px;
     font-weight: 500;
@@ -1864,15 +1650,20 @@ hr{
 }
 .notice-scroll{
     display: flex;
+    border-top: solid 0.5px;
+    border-bottom: solid 0.5px;
+    border-color: rgba(22, 113, 141, 0.726);
+    /* background-color: orangered; */
+    
 }
 
 .notice-dated{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 153, 0);
     font-weight: bold;
     padding: 5px;
-    border-right: rgb(0, 0, 0);
-    background-color: rgba(255, 166, 0, 0.795);
-    border-radius: 10px 20px 0px 20px;
+    border-right-style: solid;
+    /* background-color: rgba(255, 166, 0, 0.795);
+    border-radius: 10px 20px 0px 20px; */
 }
 
 .scrolling-notice a{
