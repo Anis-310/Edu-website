@@ -1501,10 +1501,8 @@ mark {
     font-weight: 700;
 }
 
-.scrolling-news{
-    padding: 5px;
-    background-color: rgb(4, 88, 145);
-    color: whi;
+.slider-btn a{
+    border-radius: 50px;
 }
 
 .hero-slider-content>p {
@@ -1633,6 +1631,7 @@ mark {
 
 #notice h3{
     color: white;
+    
 }
 
 
@@ -1658,7 +1657,7 @@ hr{
 }
 
 .notice-dated{
-    color: rgb(255, 153, 0);
+    color: orange;
     font-weight: bold;
     padding: 5px;
     border-right-style: solid;
@@ -1675,10 +1674,10 @@ hr{
     padding-top: 20px;
     margin-bottom: 5px;
     margin-left: 175px;
-    background-color: orange;
-    color: rgb(0, 72, 121);
-    font-weight: bold;
-    border-radius: 20px;
+    background-color: rgb(17, 92, 110);
+    color: rgb(255, 255, 255);
+    /* font-weight: bold; */
+    border-radius: 20px 20px 0px 20px;
 }
 .button a{
     color: rgb(15, 131, 160);
@@ -1882,7 +1881,7 @@ hr{
     font-weight: 500;
     margin-right: 17px;
 }
-
+/* 
 .single-item-comment-view span:last-child {
     margin-right: 0
 }
@@ -1905,10 +1904,12 @@ hr{
 
 .single-item-rating i {
     margin-left: 3px;
-}
+} */
 
 .single-item .button-default {
     padding: 8px 33px;
+    margin-bottom: 20px;
+    border-radius: 0%;
 }
 
 .button-bottom {
@@ -2729,7 +2730,7 @@ hr{
     text-align: center;
     width: 40px;
     z-index: 9999;
-    background-color: #FFAE27;
+    background-color: #0a5079;
 }
 
 #scrollUp:hover {
